@@ -877,8 +877,7 @@ const base = {
   // enforce the use of `Math.SQRT2` instead of other ways
   'math/prefer-math-sqrt2': ERROR,
   // enforce the use of `Math.trunc()` instead of other truncations
-  // temporarily disabled because of https://github.com/ota-meshi/eslint-plugin-math/issues/92
-  'math/prefer-math-trunc': OFF,
+  'math/prefer-math-trunc': [ERROR, { reportBitwise: false }],
   // enforce the use of `Number.EPSILON` instead of other ways
   'math/prefer-number-epsilon': ERROR,
   // enforce the use of `Number.isFinite()` instead of other checking ways
@@ -2067,8 +2066,10 @@ const packageJSON = {
   'package-json/no-redundant-files': ERROR,
   // enforce that package dependencies are unique
   'package-json/unique-dependencies': ERROR,
-  // checks existence of local dependencies in the package.json
-  'package-json/valid-local-dependency': ERROR,
+  // enforce that the author field is a valid npm author specification
+  'package-json/valid-author': ERROR,
+  // enforce that the `bin` property is valid
+  'package-json/valid-bin': ERROR,
   // enforce that if repository directory is specified, it matches the path to the package.json file
   'package-json/valid-repository-directory': ERROR,
   // enforce that package versions are valid semver specifiers
