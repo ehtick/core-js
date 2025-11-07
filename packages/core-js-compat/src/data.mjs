@@ -969,6 +969,7 @@ export const data = {
   'es.math.sum-precise': {
     bun: '1.2.18',
     firefox: '137',
+    safari: '26.2',
   },
   'es.math.tanh': {
     chrome: '38',
@@ -2299,12 +2300,12 @@ export const data = {
     safari: '26.0', // '16.4',
   },
   'es.uint8-array.from-base64': {
-    // Because of a bug: it doesn't throw an error on incorrect length of base64 string
+    // safari 18.2-26.1 bug: it doesn't throw an error on incorrect length of base64 string
     bun: '1.2.20', // '1.1.22',
     chrome: '140',
     firefox: '133',
-    // Because of a bug: it doesn't throw an error on incorrect length of base64 string
-    // safari: '18.2',
+    // safari 18.2-26.1 bug: it doesn't throw an error on incorrect length of base64 string
+    safari: '26.2', // '18.2',
   },
   'es.uint8-array.from-hex': {
     bun: '1.1.22',
@@ -2313,12 +2314,12 @@ export const data = {
     safari: '18.2',
   },
   'es.uint8-array.set-from-base64': {
-    // Because of a bug: it doesn't throw an error on incorrect length of base64 string
+    // safari 18.2-26.1 bug: it doesn't throw an error on incorrect length of base64 string
     bun: '1.2.20', // '1.1.22',
     chrome: '140',
     firefox: '133',
-    // Because of a bug: it doesn't throw an error on incorrect length of base64 string
-    // safari: '18.2',
+    // safari 18.2-26.1 bug: it doesn't throw an error on incorrect length of base64 string
+    safari: '26.2', // '18.2',
   },
   'es.uint8-array.set-from-hex': {
     bun: '1.1.22',
@@ -2586,10 +2587,12 @@ export const data = {
   'esnext.map.get-or-insert': {
     bun: '1.2.20',
     firefox: '144',
+    safari: '26.2',
   },
   'esnext.map.get-or-insert-computed': {
     bun: '1.2.20',
     firefox: '144',
+    safari: '26.2',
   },
   // TODO: Remove from `core-js@4`
   'esnext.map.group-by': null,
@@ -2881,10 +2884,12 @@ export const data = {
   'esnext.weak-map.get-or-insert': {
     bun: '1.2.20',
     firefox: '144',
+    safari: '26.2',
   },
   'esnext.weak-map.get-or-insert-computed': {
     bun: '1.2.20',
     firefox: '144',
+    safari: '26.2',
   },
   // TODO: Remove from `core-js@4`
   'esnext.weak-map.upsert': {
